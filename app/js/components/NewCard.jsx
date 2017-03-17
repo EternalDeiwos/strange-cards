@@ -5,11 +5,11 @@
  * @ignore
  */
 import React from 'react'
-import View from './View.jsx'
-import SkillCard from './SkillCard.jsx'
+import View from './common/View.jsx'
+import SkillCard from './common/SkillCard.jsx'
 
 const text = {
-  name: 'Bash',
+  name: 'New Card',
   cost: { might: 1 },
   small: 'A melee attack that deals 1 less point of damage but dazes the target for one round.',
   desc: 'This is a pummeling melee attack. Your attack inflicts 1 less point of damage than normal, but dazes your target for one round, during which time the difficulty of all tasks it performs is modified by one step to its detriment.',
@@ -21,15 +21,15 @@ const text = {
 }
 
 /**
- * Cards
+ * NewCard
  */
-class Cards extends React.Component {
+class NewCard extends React.Component {
 
   render () {
     return (
-      <View layout="row">
+      <div>
         <SkillCard data={text} />
-      </View>
+      </div>
     )
   }
 
@@ -38,4 +38,4 @@ class Cards extends React.Component {
 /**
  * Export
  */
-export default Cards
+export default NewCard

@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Defensive",
+    "small": "You are trained in Speed defense actions when not wearing armour.",
+    "desc": "You are trained in Speed defense actions when not wearing armour.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "Practiced With All Weapons",
+    "small": "You can use any weapon.",
+    "desc": "You can use any weapon.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "Physical Skills",
+    "small": "You are trained in your choice of two of the following: balancing,climbing, jumping, running, or swimming.",
+    "desc": "You are trained in your choice of two of the following: balancing,climbing, jumping, running, or swimming.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "Bash",
+    "cost": { "might": 1 },
+    "small": "A melee attack that deals 1 less point of damage but dazes the target for one round.",
+    "desc": "This is a pummeling melee attack. Your attack inflicts 1 less point of damage than normal, but dazes your target for one round, during which time the difficulty of all tasks it performs is modified by one step to its detriment.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "Endurance",
+    "small": "Any duration dealing with physical actions is either doubled or halved, whichever is better for you.",
+    "desc": "Any duration dealing with physical actions is either doubled or halved, whichever is better for you. For example, if the typical person can hold their breath for thirty seconds, you can hold it for one minute. If the typical person can march for four hours without stopping, you can do so for eight hours. In terms of harmful effects, if a poison paralyzes its victims for one minute, you are paralyzed for thirty seconds. The minimum duration is always one round.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "Fleet of Foot",
+    "small": "If you succeed at a difficulty 2 Speed roll to run, you can move a short distance and take an action in the same round.",
+    "desc": "If you succeed at a difficulty 2 Speed roll to run, you can move a short distance and take an action in the same round.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "No Need for Weapons",
+    "small": "When you make an unarmed attack, you can choose if you make the attack as if using a medium or light weapon.",
+    "desc": "When you make an unarmed attack (such as a punch or kick), you can choose if you make the attack as if using a medium weapon or as if using a light weapon.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "Pierce",
+    "cost": { "speed": 1 },
+    "small": "You make an attack and inflict 1 additional point of damage.",
+    "desc": "This is a well-aimed, penetrating ranged attack. You make an attack and inflict 1 additional point of damage.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "Practiced in Armor",
+    "small": "You can wear any kind of armor and reduce the Might cost per hour and the Speed Pool reduction for wearing armor by 2.",
+    "desc": "Vectors can wear armour for long periods of time without tiring and can compensate for slowed reactions from wearing armor. You can wear any kind of armor. You reduce the Might cost per hour for wearing armor and the Speed Pool reduction for wearing armor by 2.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  }
+]

@@ -1,12 +1,69 @@
 'use strict'
 
+/**
+ * Dependencies
+ * @ignore
+ */
 import React from 'react'
 import ReactDOM from 'react-dom'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+
+import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Cards from './Cards.jsx'
-import store from './redux/store'
+
+import Nav from './components/Nav.jsx'
+
+import router from './router.jsx'
+import store from './store'
+
+/**
+ * Tap Event
+ * @ignore
+ */
+injectTapEventPlugin()
+
+/**
+ * Styles
+ * @ignore
+ */
+const style = {
+  appContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    flex: '100',
+    position: 'relative',
+  },
+  viewContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    flex: '100',
+    position: 'relative',
+    justifyContent: 'center',
+    margin: '20px'
+  }
+}
+
+/**
+ * MainLayout
+ */
+class MainLayout extends React.Component {
+
+  render () {
+    let { props: { children } } = this
+    let { appContainer, viewContainer } = style
+
+    return (
+      <div style={appContainer}>
+        <Nav />
+        <div style={viewContainer}>
+          {router}
+        </div>
+      </div>
+    )
+  }
+
+}
 
 /**
  * DOM
@@ -15,9 +72,7 @@ import store from './redux/store'
 ReactDOM.render(
   <MuiThemeProvider>
     <Provider store={store}>
-      <Router>
-        <Route path="/" component={Cards} />
-      </Router>
+      <MainLayout />
     </Provider>
   </MuiThemeProvider>,
   document.getElementById('app')

@@ -8,49 +8,68 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import domtoimage from 'dom-to-image'
 import FileSaver from 'file-saver'
-import View from './View.jsx'
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
-import BackgroundImage from '../img/light-background-a025.png'
 
-const style = {
-  backgroundStyle: {
-    backgroundImage: `url(${BackgroundImage})`,
-    backgroundPosition: 'right top'
-  },
-  contentStyle: {
-    width: '500px'
+import View from './View.jsx'
+import BackgroundImage from '../../../img/light-background-a025.png'
+
+const random = () => Math.round(Math.random() * 100)
+
+const style = () => {
+  return {
+    backgroundStyle: {
+      backgroundImage: `url(${BackgroundImage})`,
+      backgroundPosition: `${random()}% ${random()}%`
+    },
+    contentStyle: {
+      width: '500px'
+    }
   }
 }
 
 const title = data => {
-  let costs = Object.keys(data.cost).map(key => {
-    let title
-    switch (key) {
-      case 'might':
-        title = 'Might'
-        break
-      case 'speed':
-        title = 'Speed'
-        break
-      case 'intellect':
-        title = 'Intellect'
-        break
-    }
+  let costs = []
 
-    return `${data.cost[key]} ${title}`
-  })
+  if (data.cost) {
+    costs = Object.keys(data.cost).map(key => {
+      let title
+      switch (key.toLowerCase()) {
+        case 'might':
+          title = 'Might'
+          break
+        case 'speed':
+          title = 'Speed'
+          break
+        case 'intellect':
+          title = 'Intellect'
+          break
+        case 'luck':
+          title = 'Luck'
+          break
+      }
 
-  return `${data.name} (${costs.join(', ')})`
+      return `${data.cost[key]} ${title}`
+    })
+
+    return `${data.name} (${costs.join(', ')})`
+  } else {
+    return data.name
+  }
 }
 
 const subtitle = data => {
   let { source, from, action } = data
+  let sourceText, actionText, fromText
 
-  let actionText = `${data.action ? 'Action' : 'Enabler'}`
-  let sourceText = source.map(src => {
-    return `${src.book}, pg.${src.page}`
-  }).join('; ')
-  let fromText = from.join('; ')
+  actionText = `${data.action ? 'Action' : 'Enabler'}`
+
+  if (source) {
+    sourceText = source.map(src => {
+      return `${src.book}, pg.${src.page}`
+    }).join('; ')
+  }
+
+  fromText = from.join('; ')
 
   return `${actionText}. ${fromText}. (${sourceText})`
 }
@@ -62,7 +81,6 @@ class SkillCard extends React.Component {
 
   save () {
     let node = ReactDOM.findDOMNode(this)
-    console.log(node.offsetHeight, node.offsetWidth)
 
     domtoimage.toBlob(node, {
       height: node.offsetHeight,
@@ -73,7 +91,7 @@ class SkillCard extends React.Component {
   }
 
   render () {
-    let { backgroundStyle, contentStyle } = style
+    let { backgroundStyle, contentStyle } = style()
     let { props: { data } } = this
 
     return (

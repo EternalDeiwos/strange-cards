@@ -11,7 +11,7 @@ module.exports = {
 
   entry: {
     app: ['./js/index.jsx'],
-    react: ['react', 'react-dom', 'react-router-dom', 'redux', 'react-redux', 'react-router-redux'],
+    react: ['react', 'react-dom', 'react-router-dom', 'redux', 'react-redux'],
     utils: ['moment', 'material-ui', 'dom-to-image', 'file-saver']
   },
 
@@ -26,6 +26,12 @@ module.exports = {
         test: /\.jsx?$/,
         loaders: ['react-hot-loader', 'babel-loader'],
         exclude: /node_modules/
+      },
+      {
+        test: /\.json$/,
+        loaders: [
+          'json-loader'
+        ]
       },
       {
         test: /\.css$/,
