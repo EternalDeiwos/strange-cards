@@ -21,8 +21,8 @@
   },
   {
     "name": "Physical Skills",
-    "small": "You are trained in your choice of two of the following: balancing,climbing, jumping, running, or swimming.",
-    "desc": "You are trained in your choice of two of the following: balancing,climbing, jumping, running, or swimming.",
+    "small": "You are trained in your choice of two of the following: balancing, climbing, jumping, running, or swimming.",
+    "desc": "You are trained in your choice of two of the following: balancing, climbing, jumping, running, or swimming.",
     "action": false,
     "bought": false,
     "source": [{ "book": "Core Rulebook", "page": 0 }],
