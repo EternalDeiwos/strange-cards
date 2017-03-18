@@ -48,7 +48,7 @@ export default function SearchReducer (previous={}, action) {
 
           return filters[key](ability[key])
         }, true)
-      })
+      }).slice(0, 10)
     })
   } else if (action.type === 'CARD_CLEAR') {
     return Object.assign({}, previous, {
