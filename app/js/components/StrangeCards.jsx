@@ -126,9 +126,9 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 /**
- * Cards
+ * StrangeCards
  */
-class Cards extends React.Component {
+class StrangeCards extends React.Component {
 
   constructor (props) {
     super(props)
@@ -292,4 +292,4 @@ class Cards extends React.Component {
 /**
  * Export
  */
-export default connect(mapStateToProps, mapDispatchToProps)(Cards)
+export default connect(mapStateToProps, mapDispatchToProps)(StrangeCards)

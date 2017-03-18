@@ -7,7 +7,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import Cards from './components/Cards.jsx'
+import StrangeCards from './components/StrangeCards.jsx'
 
 /**
  * Export
@@ -16,7 +16,7 @@ import Cards from './components/Cards.jsx'
 export default (
   <Router>
     <div>
-      <Route exact={true} path="/" component={Cards} />
+      <Route exact={true} path="/" component={StrangeCards} />
     </div>
   </Router>
 )
