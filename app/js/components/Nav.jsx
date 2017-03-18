@@ -45,9 +45,27 @@ class Nav extends React.Component {
     return (
       <BottomNavigation selectedIndex={this.selected}>
         <BottomNavigationItem
-          label="Cards"
+          label="The Strange"
           icon={<Icon iconClassName="bolt" />}
           onTouchTap={() => this.select('/')}
+        />
+        <BottomNavigationItem
+          label="Pathfinder"
+          icon={<Icon iconClassName="safari" />}
+          onTouchTap={() => this.select('/')}
+          disabled={true}
+        />
+        <BottomNavigationItem
+          label="DnD 4"
+          icon={<Icon iconClassName="circle" />}
+          onTouchTap={() => this.select('/')}
+          disabled={true}
+        />
+        <BottomNavigationItem
+          label="DnD 5"
+          icon={<Icon iconClassName="circle-o" />}
+          onTouchTap={() => this.select('/')}
+          disabled={true}
         />
 
       </BottomNavigation>
