@@ -1,6 +1,6 @@
 'use strict'
 
-import CoreData from '../data/the_strange_core_abilities_0317.json'
+import CoreData from '../../data/the_strange_core_abilities_0317.json'
 
 const db = [].concat(CoreData)
 
