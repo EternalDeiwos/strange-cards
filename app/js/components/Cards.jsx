@@ -138,7 +138,6 @@ class Cards extends React.Component {
     let isNotEmpty = Object.keys(this.formData).reduce((prev, key) => {
       return (!!this.formData[key] || prev)
     }, false)
-    console.log(isNotEmpty, this.formData)
 
     if (isNotEmpty) {
       this.props.query(this.formData)
