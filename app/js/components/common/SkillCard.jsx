@@ -58,8 +58,8 @@ const title = data => {
 }
 
 const subtitle = data => {
-  let { source, from, action } = data
-  let sourceText, actionText, fromText
+  let { source, from, action, bought } = data
+  let sourceText, actionText, fromText, boughtText
 
   actionText = `${data.action ? 'Action' : 'Enabler'}`
 
@@ -71,7 +71,11 @@ const subtitle = data => {
 
   fromText = from.join('; ')
 
-  return `${actionText}. ${fromText}. (${sourceText})`
+  boughtText = bought
+    ? 'Purchasable'
+    : 'Standard'
+
+  return `${actionText}. ${fromText}. ${boughtText}. (${sourceText})`
 }
 
 /**
