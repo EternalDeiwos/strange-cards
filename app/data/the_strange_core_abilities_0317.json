@@ -5,7 +5,7 @@
     "desc": "You are trained in Speed defense actions when not wearing armour.",
     "action": false,
     "bought": false,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 26 }],
     "type": "type",
     "from": ["Vector 1"]
   },
@@ -15,7 +15,7 @@
     "desc": "You can use any weapon.",
     "action": false,
     "bought": false,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 26 }],
     "type": "type",
     "from": ["Vector 1"]
   },
@@ -25,7 +25,17 @@
     "desc": "You are trained in your choice of two of the following: balancing, climbing, jumping, running, or swimming.",
     "action": false,
     "bought": false,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 26 }],
+    "type": "type",
+    "from": ["Vector 1"]
+  },
+  {
+    "name": "Translation",
+    "small": "You are most effective at easing a translation.",
+    "desc": "You can participate in the process of traveling to another recursion. Each time you do, you can choose to initiate, hasten, or ease a translation. If you choose to hasten or ease the process, someone else in the group must initiate the translation. As a vector, you are most effective at easing a translation. This easing advantage allows group members to acclimate more quickly after the translation is complete. In order to translate, you must know that the recursion you are translating to exists. The GM will decide if you have enough information to confirm its existence and determine what level of difficulty is needed to reach the destination.",
+    "action": true,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 26 }],
     "type": "type",
     "from": ["Vector 1"]
   },
@@ -36,7 +46,7 @@
     "desc": "This is a pummeling melee attack. Your attack inflicts 1 less point of damage than normal, but dazes your target for one round, during which time the difficulty of all tasks it performs is modified by one step to its detriment.",
     "action": true,
     "bought": true,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 26 }],
     "type": "type",
     "from": ["Vector 1"]
   },
@@ -46,7 +56,7 @@
     "desc": "Any duration dealing with physical actions is either doubled or halved, whichever is better for you. For example, if the typical person can hold their breath for thirty seconds, you can hold it for one minute. If the typical person can march for four hours without stopping, you can do so for eight hours. In terms of harmful effects, if a poison paralyzes its victims for one minute, you are paralyzed for thirty seconds. The minimum duration is always one round.",
     "action": false,
     "bought": true,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 26 }],
     "type": "type",
     "from": ["Vector 1"]
   },
@@ -56,7 +66,7 @@
     "desc": "If you succeed at a difficulty 2 Speed roll to run, you can move a short distance and take an action in the same round.",
     "action": false,
     "bought": true,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 27 }],
     "type": "type",
     "from": ["Vector 1"]
   },
@@ -66,7 +76,7 @@
     "desc": "When you make an unarmed attack (such as a punch or kick), you can choose if you make the attack as if using a medium weapon or as if using a light weapon.",
     "action": false,
     "bought": true,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 27 }],
     "type": "type",
     "from": ["Vector 1"]
   },
@@ -77,7 +87,7 @@
     "desc": "This is a well-aimed, penetrating ranged attack. You make an attack and inflict 1 additional point of damage.",
     "action": true,
     "bought": true,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
     "type": "type",
     "from": ["Vector 1"]
   },
@@ -87,8 +97,234 @@
     "desc": "Vectors can wear armour for long periods of time without tiring and can compensate for slowed reactions from wearing armor. You can wear any kind of armor. You reduce the Might cost per hour for wearing armor and the Speed Pool reduction for wearing armor by 2.",
     "action": false,
     "bought": true,
-    "source": [{ "book": "Core Rulebook", "page": 0 }],
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
     "type": "type",
     "from": ["Vector 1"]
+  },
+  {
+    "name": "Physical Skill",
+    "small": "Choose one skill in which you are not already trained: balancing, climbing, jumping, running, or swimming.",
+    "desc": "Choose one skill in which you are not already trained: balancing, climbing, jumping, running, or swimming. You are trained in that skill.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 2"]
+  },
+  {
+    "name": "Reach Beyond",
+    "cost": { "intellect": 3 },
+    "small": "When you use Reach Beyond, you can access training in a skill provided by a focus you have in another recursion.",
+    "desc": "When you use Reach Beyond, you can access training in a skill provided by a focus you have in another recursion. You must have used the skill in its proper recursion at least once before. You can use the skill once. To use it again, you must use Reach Beyond again.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 2"]
+  },
+  {
+    "name": "Enable Others",
+    "small": "You can use the helping rules to provide a benefit to another character attempting a physical task.",
+    "desc": "You can use the helping rules to provide a benefit to another character attempting a physical task. This requires no action on your part.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 2"]
+  },
+  {
+    "name": "Quick Recovery",
+    "small": "Your second recovery roll is only a single action.",
+    "desc": "Your second recovery roll (usually requiring ten minutes) is only a single action, just like the first roll.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 2"]
+  },
+  {
+    "name": "Range Increase",
+    "small": "Ranges for you increase by one step.",
+    "desc": "Ranges for you increase by one step. Immediate becomes short, short becomes long, long becomes 200 feet (62 m).",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 2"]
+  },
+  {
+    "name": "Skill With Attacks",
+    "small": "Choose one type of attack in which you are not already trained; you are trained in attacks using that type of weapon.",
+    "desc": "Choose one type of attack in which you are not already trained: light bashing, light bladed, light ranged, medium bashing, medium bladed, medium ranged, heavy bashing, heavy bladed, or heavy ranged. You are trained in attacks using that type of weapon.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 2", "Vector 4"]
+  },
+  {
+    "name": "Spray",
+    "cost": { "speed": 2 },
+    "small": "If a weapon has the ability to fire rapid shots without reloading: the difficulty of the attack roll is decreased by one step. If the attack is successful, it deals 1 less point of damage than normal.",
+    "desc": "If a weapon has the ability to fire rapid shots without reloading (usually called a rapid-fire weapon, such as the submachine gun), you can spray multiple shots around your target to increase the chance of hitting. Spray uses 1d6 + 1 rounds of ammo (or all the ammo in the weapon, if it has less than the number rolled). The difficulty of the attack roll is decreased by one step. If the attack is successful, it deals 1 less point of damage than normal.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 2"]
+  },
+  {
+    "name": "Wreck",
+    "small": "When using this as an attack, you take a –1 penalty to the attack roll, and you inflict 3 additional points of damage. When attempting to damage an object or barrier, you are trained in the task.",
+    "desc": "Using two hands, you wield a weapon or a tool with a powerful swing. (If fighting unarmed, this attack is made with both fists or both feet together.) When using this as an attack, you take a –1 penalty to the attack roll, and you inflict 3 additional points of damage. When attempting to damage an object or barrier, you are trained in the task.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 2"]
+  },
+  {
+    "name": "Skill With Attacks",
+    "small": "Choose one type of attack in which you are not already trained; you are trained in attacks using that type of weapon.",
+    "desc": "Choose one type of attack in which you are not already trained: light bashing, light bladed, light ranged, medium bashing, medium bladed, medium ranged, heavy bashing, heavy bladed, or heavy ranged. You are trained in attacks using that type of weapon.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 3"]
+  },
+  {
+    "name": "Experienced With Armor",
+    "small": "Might cost per hour and Speed Pool reduction is now 3.",
+    "desc": "The cost reduction from your Practiced in Armor ability improves. You now reduce the Might cost per hour and the Speed Pool reduction by 3.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 3"]
+  },
+  {
+    "name": "Ignore the Pain",
+    "small": "Effects of being impaired are ignored and effects of being debilitated are treated as impaired normally would be.",
+    "desc": "You do not feel the detrimental effects of being impaired, and when you are debilitated, you ignore those effects and experience the effects normally associated with being impaired instead. (Dead is still dead.)",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 3"]
+  },
+  {
+    "name": "Lunge",
+    "cost": { "might": 2 },
+    "small": "Attack with the difficulty increased by one step. If successful, it inflicts 4 additional points of damage.",
+    "desc": "This move requires you to extend yourself for a powerful stab or smash. The awkward lunge increases the difficulty of the attack roll by one step. If your attack is successful, it inflicts 4 additional points of damage.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 3"]
+  },
+  {
+    "name": "Resilience",
+    "small": "You have 1 point of Armor against any kind of physical damage.",
+    "desc": "You have 1 point of Armor against any kind of physical damage, even damage that normally ignores Armor.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 3"]
+  },
+  {
+    "name": "Slice",
+    "cost": { "speed": 2 },
+    "small": "Attack with the difficulty decreased by one step. If successful, it inflicts 1 less point of damage.",
+    "desc": "This is a quick attack with a bladed or pointed weapon that is hard to defend against. The difficulty of the attack roll is decreased by one step. If the attack is successful, it deals 1 less point of damage than normal.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 3"]
+  },
+  {
+    "name": "Successive Attack",
+    "small": "Make another attack if your previous one disabled a foe.",
+    "desc": "If you take down a foe, you can immediately make another attack on that same turn against a new foe within your reach. The second attack is part of the same action. You can use this move with melee attacks and ranged attacks.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 3"]
+  },
+  {
+    "name": "Physical Skill",
+    "small": "Specialize in balancing, climbing, jumping, running, or swimming.",
+    "desc": "Choose one skill in which you are trained but not specialized: balancing, climbing, jumping, running, or swimming. You are specialized in that skill.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 4", "Vector 5"]
+  },
+  {
+    "name": "Arc Spray",
+    "cost": { "speed": 3 },
+    "small": "Make a separate attack roll against three targets. The difficulty of each attack is increased by one step.",
+    "desc": "If a weapon has the ability to fire rapid shots without reloading (usually called a rapid-fire weapon, such as the automatic pistol), you can fire your weapon at up to three targets (all next to one another) as a single action. Make a separate attack roll against each target. The difficulty of each attack is increased by one step.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 4"]
+  },
+  {
+    "name": "Capable Warrior",
+    "small": "Your attacks deal 1 additional point of damage.",
+    "desc": "Your attacks deal 1 additional point of damage.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 4"]
+  },
+  {
+    "name": "Feint",
+    "cost": { "speed": 2 },
+    "small": "Spend a round distracting your opponent to deal 4 additional points of damage the next.",
+    "desc": "If you spend one action creating a misdirection or diversion, in the next round you can take advantage of your opponent’s lowered defenses. Make a melee attack roll against that opponent. The difficulty of the roll is decreased by one step. If your attack is successful, it inflicts 4 additional points of damage.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 28 }],
+    "type": "type",
+    "from": ["Vector 4"]
+  },
+  {
+    "name": "Increased Effects",
+    "small": "Major effect on 19 and 20 for Speed or Might actions. Your choice.",
+    "desc": "You treat rolls of natural 19 as rolls of natural 20 for either Might actions or Speed actions (your choice when you gain this ability). This allows you to gain a major effect on a natural 19 or 20.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 4"]
+  },
+  {
+    "name": "Runner",
+    "small": "Your standard movement distance becomes long.",
+    "desc": "Your standard movement distance becomes long.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 4"]
+  },
+  {
+    "name": "Skill With Attacks",
+    "small": "Specialize in a type of attack.",
+    "desc": "Choose one type of attack, even one in which you are already trained: light  bashing, light bladed, light ranged, medium bashing, medium bladed, medium ranged, heavy bashing, heavy bladed, or heavy ranged. You are trained in attacks using that type of weapon. If you’re already trained in that type of attack, you instead become specialized in that type of attack.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 30 }],
+    "type": "type",
+    "from": ["Vector 5"]
   }
 ]
