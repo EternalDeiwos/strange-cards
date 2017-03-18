@@ -5,18 +5,24 @@
  * @ignore
  */
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import StrangeCards from './components/StrangeCards.jsx'
+
+class Router extends React.Component {
+  render () {
+    return (
+      <BrowserRouter>
+        <div>
+          <Route exact={true} path="/" component={StrangeCards} />
+        </div>
+      </BrowserRouter>
+    )
+  }
+}
 
 /**
  * Export
  * @ignore
  */
-export default (
-  <Router>
-    <div>
-      <Route exact={true} path="/" component={StrangeCards} />
-    </div>
-  </Router>
-)
+export default Router

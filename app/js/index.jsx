@@ -13,8 +13,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { Provider } from 'react-redux'
 
 import Nav from './components/Nav.jsx'
+import Router from './router.jsx'
 
-import router from './router.jsx'
 import store from './store'
 
 /**
@@ -57,7 +57,7 @@ class MainLayout extends React.Component {
       <div style={appContainer}>
         <Nav />
         <div style={viewContainer}>
-          {router}
+          <Router />
         </div>
       </div>
     )
