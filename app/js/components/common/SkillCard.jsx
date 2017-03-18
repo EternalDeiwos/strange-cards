@@ -22,7 +22,7 @@ const style = () => {
       backgroundPosition: `${random()}% ${random()}%`
     },
     contentStyle: {
-      width: '500px'
+      width: '600px'
     }
   }
 }
