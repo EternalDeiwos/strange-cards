@@ -50,6 +50,12 @@ class Nav extends React.Component {
           onTouchTap={() => this.select('/')}
         />
         <BottomNavigationItem
+          label="Numenera"
+          icon={<Icon iconClassName="gear" />}
+          onTouchTap={() => this.select('/')}
+          disabled={true}
+        />
+        <BottomNavigationItem
           label="Pathfinder"
           icon={<Icon iconClassName="safari" />}
           onTouchTap={() => this.select('/')}
