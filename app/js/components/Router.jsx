@@ -7,7 +7,7 @@
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 
-import StrangeCards from './components/StrangeCards.jsx'
+import StrangeCards from './StrangeCards.jsx'
 
 class Router extends React.Component {
   render () {
