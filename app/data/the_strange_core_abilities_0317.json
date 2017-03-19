@@ -411,5 +411,66 @@
     "source": [{ "book": "Core Rulebook", "page": 30 }],
     "type": "type",
     "from": ["Vector 6"]
+  },
+  {
+    "name": "Knowledgeable",
+    "small": "You are trained in one area of knowledge or technical expertise of your choice.",
+    "desc": "You are trained in one area of knowledge or technical expertise of your choice.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 32 }],
+    "type": "type",
+    "from": ["Paradox 1"]
+  },
+  {
+    "name": "Strange Training",
+    "small": "You are trained in general topics regarding the Strange.",
+    "desc": "You are trained in general topics regarding the Strange, which allows you to attempt to understand and identify related phenomena, including the effect of a particular cypher. Strange training is also sometimes called Strange knowledge or Strange lore.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 32 }],
+    "type": "type",
+    "from": ["Paradox 1"]
+  },
+  {
+    "name": "Practiced With Light Weapons",
+    "small": "You can use light weapons without penalty.",
+    "desc": "You can use light weapons without penalty. If you wield a medium weapon, increase the difficulty of the attack by one step. If you wield a heavy weapon, increase it by two steps.",
+    "action": false,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 32 }],
+    "type": "type",
+    "from": ["Paradox 1"]
+  },
+  {
+    "name": "Translation",
+    "small": "You are most effective at initiating a translation.",
+    "desc": "You can participate in the process of traveling to another recursion. Each time you do, you can choose to initiate, hasten, or ease a translation. If you choose to hasten or ease the process, someone else in the group must initiate the translation. As a paradox, you are most effective at initiating a translation. This initiation advantage provides you with additional opportunities during the process of translating. In order to translate, you must know that the recursion you are translating to exists. The GM will decide if you have enough information to confirm its existence and determine what level of difficulty is needed to reach the destination.",
+    "action": true,
+    "bought": false,
+    "source": [{ "book": "Core Rulebook", "page": 32 }],
+    "type": "type",
+    "from": ["Paradox 1"]
+  },
+  {
+    "name": "Closed Mind",
+    "small": "You have +2 Armor against Intellect attacks.",
+    "desc": "You are trained in Intellect defense tasks and have +2 to Armor against damage that selectively targets your Intellect Pool (that normally ignores Armor).",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 32 }],
+    "type": "type",
+    "from": ["Paradox 1"]
+  },
+  {
+    "name": "Exception",
+    "cost": { "intellect": 1 },
+    "small": "A mental attack on a target for 4 points of damage and the target cannot act for its next turn. If the target is not native to your current recursion then it cannot act for a number of hours afterward.",
+    "desc": "You pick one creature within long range. The target is jolted by a confluence of fundamental forces for 4 points of damage. If the target you select is not native to the recursion where you attack it, its senses are overwhelmed. On a successful attack, in addition to taking 4 points of damage, it cannot act on its next turn. Once exposed to this revision, a non-native creature normally can’t be affected by the sense-overwhelming portion of this attack again for several hours.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 32 }],
+    "type": "type",
+    "from": ["Paradox 1"]
   }
 ]
