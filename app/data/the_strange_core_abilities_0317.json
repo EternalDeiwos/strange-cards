@@ -263,7 +263,7 @@
     "bought": false,
     "source": [{ "book": "Core Rulebook", "page": 28 }],
     "type": "type",
-    "from": ["Vector 4", "Vector 5"]
+    "from": ["Vector 4", "Vector 5", "Vector 6"]
   },
   {
     "name": "Arc Spray",
@@ -318,6 +318,48 @@
     "from": ["Vector 4"]
   },
   {
+    "name": "Jump Attack",
+    "cost": { "might": 5 },
+    "small": "Attempt a difficulty 4 Might jump action. On success you deal 3 additional points of damage and knock the target down. On failure you attempt a normal attack.",
+    "desc": "You attempt a difficulty 4 Might action to jump high into the air as part of your melee attack. If you succeed, your attack inflicts 3 additional points of damage and knocks the foe down. If you fail, you still make your normal attack roll, but you don’t inflict the extra damage or knock down the opponent.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 5"]
+  },
+  {
+    "name": "Mastery With Defense",
+    "small": "Specialize in a defense task that you are already trained in. Can be taken multiple times for different tasks.",
+    "desc": "Choose one type of defense task in which you are trained: Might, Speed, or Intellect. You are specialized in defense tasks of that type. Unlike most moves, you can select this move up to three times. Each time you select it, you must choose a different type of defense task.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 5"]
+  },
+  {
+    "name": "Parry",
+    "cost": { "speed": 5 },
+    "small": "Decrease difficulty of Speed defense tasks by one step for ten rounds.",
+    "desc": "You can deflect incoming attacks quickly. When you activate this move, for the next ten rounds the difficulty of all Speed defense rolls is reduced by one step.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 5"]
+  },
+  {
+    "name": "Physical Adept",
+    "small": "Reroll the first 1 on all Speed and Might related tasks.",
+    "desc": "Any time you spend points from your Might Pool or Speed Pool on an action for any reason, if you roll a 1 on the associated die, you reroll the die, always taking the second result (even if it’s a 1).",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 29 }],
+    "type": "type",
+    "from": ["Vector 5"]
+  },
+  {
     "name": "Skill With Attacks",
     "small": "Specialize in a type of attack.",
     "desc": "Choose one type of attack, even one in which you are already trained: light  bashing, light bladed, light ranged, medium bashing, medium bladed, medium ranged, heavy bashing, heavy bladed, or heavy ranged. You are trained in attacks using that type of weapon. If you’re already trained in that type of attack, you instead become specialized in that type of attack.",
@@ -325,6 +367,49 @@
     "bought": true,
     "source": [{ "book": "Core Rulebook", "page": 30 }],
     "type": "type",
-    "from": ["Vector 5"]
+    "from": ["Vector 5", "Vector 6"]
+  },
+  {
+    "name": "Again and Again",
+    "cost": { "speed": 8 },
+    "small": "Take an additional action.",
+    "desc": "You can take an additional action in a round in which you have already acted.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 30 }],
+    "type": "type",
+    "from": ["Vector 6"]
+  },
+  {
+    "name": "Mastery With Armor",
+    "small": "Ignore armor Might and Speed costs. Swap \"Experienced With Armor\" for a different move in the same tier if you have selected it.",
+    "desc": "When you wear any armor, you reduce the armor’s penalties (Might cost and Speed reduction) to 0. If you select this move and you already have the Experienced With Armor move, replace Experienced With Armor with a different third-tier move because Mastery With Armor is better.",
+    "action": false,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 30 }],
+    "type": "type",
+    "from": ["Vector 6"]
+  },
+  {
+    "name": "Spin Attack",
+    "cost": { "speed": 5 },
+    "small": "Attack (melee) 5 foes in a single action. Effort remains limited to one action and any effects apply to all 5 attacks.",
+    "desc": "You stand still and make melee attacks against up to five foes within reach, all as part of the same action in one round. Make a separate attack roll for each foe. You remain limited by the amount of Effort you can apply on one action. Anything that modifies your attack or damage applies to all of these attacks.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 30 }],
+    "type": "type",
+    "from": ["Vector 6"]
+  },
+  {
+    "name": "Shooting Gallery",
+    "cost": { "speed": 5 },
+    "small": "Attack (ranged) 5 foes in a single action. Effort remains limited to one action and any effects apply to all 5 attacks.",
+    "desc": "You stand still and make ranged attacks against up to five foes within range, all as part of the same action in one round. Make a separate attack roll for each foe. You remain limited by the amount of Effort you can apply on one action. Anything that modifies your attack or damage applies to all of these attacks.",
+    "action": true,
+    "bought": true,
+    "source": [{ "book": "Core Rulebook", "page": 30 }],
+    "type": "type",
+    "from": ["Vector 6"]
   }
 ]
