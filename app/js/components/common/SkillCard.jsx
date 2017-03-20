@@ -61,7 +61,7 @@ const subtitle = data => {
   let { source, from, action, bought } = data
   let sourceText, actionText, fromText, boughtText
 
-  actionText = `${data.action ? 'Action' : 'Enabler'}`
+  actionText = `${data.action ? (data.initiate ? 'Action to initiate' : 'Action') : 'Enabler'}`
 
   if (source) {
     sourceText = source.map(src => {
