@@ -5,6 +5,7 @@
  * @ignore
  */
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import RaisedButton from 'material-ui/RaisedButton'
 import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar'
@@ -47,30 +48,30 @@ class Nav extends React.Component {
         <BottomNavigationItem
           label="The Strange"
           icon={<Icon iconClassName="bolt" />}
-          onTouchTap={() => this.select('/')}
+          onTouchTap={() => window.location.hash = '#/strange'}
         />
         <BottomNavigationItem
           label="Numenera"
           icon={<Icon iconClassName="gear" />}
-          onTouchTap={() => this.select('/')}
+          onTouchTap={() => window.location.hash = '#/numenera'}
           disabled={true}
         />
         <BottomNavigationItem
           label="Pathfinder"
           icon={<Icon iconClassName="safari" />}
-          onTouchTap={() => this.select('/')}
+          onTouchTap={() => window.location.hash = '#/pathfinder'}
           disabled={true}
         />
         <BottomNavigationItem
           label="DnD 4"
           icon={<Icon iconClassName="circle" />}
-          onTouchTap={() => this.select('/')}
+          onTouchTap={() => window.location.hash = '#/dnd4'}
           disabled={true}
         />
         <BottomNavigationItem
           label="DnD 5"
           icon={<Icon iconClassName="circle-o" />}
-          onTouchTap={() => this.select('/')}
+          onTouchTap={() => window.location.hash = '#/dnd5'}
           disabled={true}
         />
 
