@@ -11,7 +11,7 @@ module.exports = {
 
   entry: {
     app: ['./js/index.jsx'],
-    react: ['react', 'react-dom', 'react-router-dom', 'redux', 'react-redux', 'react-tap-event-plugin'],
+    react: ['react', 'react-dom', 'react-router-dom', 'redux', 'react-redux', 'react-tap-event-plugin', 'history'],
     utils: ['moment', 'material-ui', 'dom-to-image', 'file-saver']
   },
 
