@@ -225,7 +225,7 @@ class StrangeCards extends React.Component {
                 id="name"
               />
               <TextField
-                floatingLabelText="Class/Type/Descriptor"
+                floatingLabelText="Class/Type/Descriptor/Tier"
                 fullWidth={true}
                 onChange={(ev, value) => this.handleUpdate(value, 'from')}
                 id="from"

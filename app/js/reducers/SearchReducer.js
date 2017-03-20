@@ -14,8 +14,19 @@ export default function SearchReducer (previous={}, action) {
     }
 
     if (from) {
-      // TODO change how "from" is represented (i.e. split type and tier)
-      filters.from = val => val.filter(item => item.toLowerCase().indexOf(from.toLowerCase()) > -1).length > 0
+      let [fromTypeName, fromTier] = from.split(' ')
+
+      filters.from = val => val.filter(item => {
+        let [typeName, tier] = item.split(' ')
+
+        if (!fromTier) {
+          console.log(item, from)
+          return item.toLowerCase().indexOf(from.toLowerCase()) > -1
+        } else {
+          return typeName.toLowerCase().indexOf(fromTypeName.toLowerCase()) > -1
+            && tier === fromTier
+        }
+      }).length > 0
     }
 
     if (source) {
